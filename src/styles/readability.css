@@ -1,0 +1,224 @@
+/* Keep functional copy readable; small type is reserved for decorative labels. */
+body {
+  min-width: 0;
+}
+.image-caption {
+  bottom: 78px;
+}
+.why-quote {
+  display: grid;
+  grid-template-columns: 43px 1fr;
+  column-gap: 20px;
+}
+.why-quote > svg {
+  float: none;
+  margin: 6px 0 0;
+}
+.why-quote > span {
+  grid-column: 2;
+  margin: 17px 0 0;
+}
+@media (max-width: 899px) {
+  .mobile-panel.is-open nav {
+    max-height: calc(100dvh - 145px);
+    overflow-y: auto;
+  }
+}
+.desktop-nav a {
+  font-size: 13px;
+}
+.button {
+  font-size: 13px;
+}
+.hero-description {
+  font-size: 16px;
+  max-width: 430px;
+}
+.hero-directions,
+.hero-note,
+.hero-bottom {
+  font-size: 11px;
+}
+.info-item h2 {
+  font-size: 13px;
+}
+.info-item p {
+  font-size: 11px;
+}
+.about-copy > p,
+.section-top > p,
+.program-description,
+.section-description,
+.why-intro,
+.contact-intro,
+.enquiry-copy > p:not(.eyebrow) {
+  font-size: 14px;
+}
+.about-points > div,
+.program-card > a,
+.programs-note,
+.text-link,
+.timeline-step p,
+.benefit p,
+.contact-details address {
+  font-size: 13px;
+}
+.timeline-step h3,
+.benefit h3 {
+  font-size: 16px;
+}
+.assistance-item span,
+.assistance-note,
+.assistance-heading > span,
+.contact-details p,
+.contact-details h3,
+.footer nav a,
+.footer-main > div > a:not(.wordmark),
+.footer-main > div > p,
+.location-card-content > p:not(.eyebrow) {
+  font-size: 12px;
+}
+.footer-address {
+  font-size: 12px !important;
+}
+.footer-bottom,
+.footer-established {
+  font-size: 11px;
+}
+.hero-location > span:nth-child(2) {
+  font-size: 10px;
+}
+.hero-location strong {
+  font-size: 13px;
+}
+.program-label {
+  font-size: 9px;
+}
+.footer h3 {
+  font-size: 13px;
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  .info-item h2 {
+    font-size: 11px;
+  }
+  .info-item p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 899px) {
+  .hero-description {
+    font-size: 14px;
+  }
+  .hero-copy .button {
+    font-size: 11px;
+  }
+  .hero-directions,
+  .hero-note {
+    font-size: 10px;
+  }
+  .hero-location > span:nth-child(2) {
+    font-size: 8px;
+  }
+  .hero-location strong {
+    font-size: 11px;
+  }
+  .info-item h2 {
+    font-size: 12px;
+  }
+  .about-copy > p,
+  .section-top > p,
+  .benefit p,
+  .contact-details address {
+    font-size: 13px;
+  }
+  .about-points > div,
+  .contact-whatsapp {
+    font-size: 11px;
+  }
+  .benefit h3 {
+    font-size: 14px;
+  }
+  .assistance-item span {
+    font-size: 10px;
+  }
+  .location-card-content .button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-description {
+    font-size: 15px;
+  }
+  .hero-copy .button {
+    font-size: 12px;
+  }
+  .hero-copy .button-primary > svg:last-child {
+    display: none;
+  }
+  .hero-directions {
+    font-size: 11px;
+  }
+  .hero-bottom > span {
+    font-size: 10px;
+  }
+  .info-item h2 {
+    font-size: 11px;
+  }
+  .info-item p {
+    font-size: 10px;
+  }
+  .about-copy > p,
+  .section-top > p,
+  .program-description,
+  .why-intro,
+  .contact-intro,
+  .enquiry-copy > p:not(.eyebrow) {
+    font-size: 14px;
+  }
+  .about-points > div,
+  .programs-note,
+  .contact-details p {
+    font-size: 12px;
+  }
+  .timeline-step p,
+  .benefit p {
+    font-size: 13px;
+  }
+  .timeline-step {
+    min-height: 140px;
+  }
+  .enquiry-copy .button {
+    font-size: 11px;
+  }
+  .light-link,
+  .footer-address {
+    font-size: 11px !important;
+  }
+  .footer-bottom {
+    font-size: 9px;
+  }
+  .footer-main > div > a:not(.wordmark) {
+    font-size: 11px;
+  }
+  .header-cta {
+    font-size: 10px;
+  }
+  .location-card-content .button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 359px) {
+  .hero-copy .button {
+    font-size: 11px;
+    padding-inline: 12px;
+  }
+  .header-cta {
+    font-size: 9px;
+  }
+  .hero-directions {
+    font-size: 10px;
+  }
+  .enquiry-copy .button {
+    font-size: 11px;
+  }
+}

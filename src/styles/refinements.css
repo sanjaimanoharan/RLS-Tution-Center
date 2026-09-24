@@ -1,0 +1,188 @@
+/* Deep green and warm brass repeat the existing enquiry panel palette. */
+:root {
+  --forest: #1b4541;
+  --brass: #e1d3a5;
+}
+
+.info-strip {
+  background: var(--forest);
+  border-block-color: #345952;
+  color: #faf9f5;
+}
+.info-item {
+  border-color: #54736b;
+}
+.info-item > svg {
+  color: var(--brass);
+}
+.info-item p {
+  color: #d4e0d7;
+}
+
+.hero-image-wrap {
+  box-shadow: 0 22px 48px #173c3f18;
+}
+.programs-section {
+  background: #f5f4ed;
+}
+.course-card {
+  border-top: 3px solid #427064;
+  background: #fffefa;
+  box-shadow: 0 5px 18px #173c3f05;
+}
+.course-card .program-icon {
+  background: var(--forest);
+  color: var(--brass);
+}
+.course-card .program-index {
+  color: #59756b;
+  font-family: "Lora", Georgia, serif;
+  font-size: 23px;
+  font-style: italic;
+}
+.course-card > a {
+  color: #24584a;
+  border-color: #d8e0d5;
+}
+.course-card:hover {
+  border-color: #427064;
+  box-shadow: 0 16px 36px #173c3f10;
+}
+.subject-card {
+  background: #fffefa;
+  border-color: #d6dfd4;
+}
+.subject-card .program-icon {
+  color: #24584a;
+  background: #e6eee4;
+}
+.higher-subjects {
+  border-top: 2px solid #427064;
+}
+
+.founder-section .founder-portrait {
+  border: 5px solid #faf9f5;
+  box-shadow: 0 0 0 1px #c3d0bf, 0 20px 45px #173c3f18;
+}
+.founder-philosophy {
+  background: var(--forest);
+  color: #f8f6eb;
+  border-left: 3px solid #c4a66a;
+}
+.founder-philosophy::before {
+  color: var(--brass);
+}
+.founder-philosophy cite {
+  color: #d4e0d7;
+}
+
+.journey-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+  color: #f8f6eb;
+}
+.journey-section::after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid #ffffff12;
+  border-radius: 50%;
+  right: -190px;
+  top: -210px;
+  pointer-events: none;
+}
+.journey-section .eyebrow,
+.journey-section .section-heading h2 em,
+.journey-period {
+  color: var(--brass);
+}
+.journey-section .section-description,
+.journey-item > p:last-child {
+  color: #d4e0d7;
+}
+.journey-index {
+  color: #c8d7ca;
+}
+.journey-list,
+.journey-item {
+  border-color: #5b786e;
+}
+.journey-item::before {
+  background: var(--brass);
+  border-color: var(--forest);
+  box-shadow: 0 0 0 1px #bcab7d;
+}
+.family-section {
+  background: #faf9f5;
+}
+.family-media {
+  border-color: #bccabd;
+  box-shadow: 0 18px 44px #173c3f12;
+}
+.family-media figcaption {
+  background: var(--forest);
+  color: var(--brass);
+}
+.school-item svg {
+  color: #2b6652;
+}
+.awards-section {
+  background: #eaf0e7;
+  border-color: #d3dfd0;
+}
+.award-card {
+  background: #fffefa;
+  border-color: #ccd9c7;
+  border-top: 3px solid #ac925c;
+  box-shadow: 0 8px 24px #173c3f07;
+}
+.award-icon {
+  color: var(--brass);
+  background: var(--forest);
+}
+.award-card-top > span:last-child {
+  color: #587063;
+}
+.video-frame {
+  border: 5px solid var(--forest);
+  box-shadow: 0 18px 45px #173c3f1c;
+}
+.why-quote {
+  padding: 28px;
+  border: 1px solid #345952;
+  border-radius: 6px;
+  background: var(--forest);
+  color: #f8f6eb;
+  box-shadow: 0 12px 30px #173c3f0c;
+}
+.why-quote > svg,
+.why-quote em {
+  color: var(--brass);
+}
+.why-quote > span {
+  color: #d4e0d7;
+  font-size: 9px;
+}
+.benefit > span {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: #f8f6eb;
+}
+.enquiry-card {
+  box-shadow: 0 20px 45px #173c3f18;
+}
+
+@media (max-width: 600px) {
+  .why-quote {
+    padding: 24px 20px;
+    column-gap: 14px;
+  }
+  .why-quote p {
+    font-size: 18px;
+  }
+  .why-quote > span {
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,179 @@
+.opening-sequence {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--cream);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  animation: opening-curtain 0.7s cubic-bezier(0.76, 0, 0.24, 1) 1.05s forwards;
+}
+.opening-brand {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: opening-lift 0.55s ease 1.1s forwards;
+}
+.opening-book {
+  width: 79px;
+  height: 65px;
+  overflow: visible;
+  stroke: #55786a;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.book-outline {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: book-draw 0.9s ease forwards;
+}
+.book-lines {
+  stroke-width: 1.1;
+  opacity: 0;
+  animation: opening-appear 0.5s ease 0.4s forwards;
+}
+.book-turn {
+  fill: var(--cream);
+  transform-origin: 50px 38px;
+  animation: book-page 0.95s cubic-bezier(0.25, 0.6, 0.3, 1) 0.1s both;
+}
+.opening-name {
+  display: flex;
+  overflow: hidden;
+  margin-top: 19px;
+  font-size: 51px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+}
+.opening-name span {
+  display: inline-block;
+  animation: letter-rise 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.opening-name span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.opening-name span:nth-child(3) {
+  animation-delay: 0.17s;
+}
+.opening-name span:last-child {
+  color: #b9975d;
+  animation-delay: 0.24s;
+}
+.opening-subtitle {
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  animation: opening-appear 0.65s ease 0.3s both;
+}
+.opening-rule {
+  width: 145px;
+  height: 1px;
+  background: #dddeda;
+  margin-top: 27px;
+  overflow: hidden;
+}
+.opening-rule span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #b9975d;
+  transform-origin: left;
+  animation: rule-draw 1.1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.opening-caption {
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #657264;
+  margin-top: 18px;
+  animation: opening-appear 0.5s ease 0.5s both;
+}
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #b9975d;
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 60;
+  pointer-events: none;
+}
+.section-heading h2 {
+  perspective: 800px;
+}
+.timeline-step {
+  will-change: auto;
+}
+@keyframes opening-curtain {
+  to {
+    clip-path: inset(0 0 100% 0);
+    visibility: hidden;
+  }
+}
+@keyframes opening-lift {
+  to {
+    transform: translateY(-45px);
+    opacity: 0;
+  }
+}
+@keyframes book-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes book-page {
+  0% {
+    transform: perspective(350px) rotateY(-155deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(350px) rotateY(0deg);
+    opacity: 0;
+  }
+}
+@keyframes letter-rise {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes opening-appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rule-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .opening-sequence,
+  .reading-progress {
+    display: none;
+  }
+}
+@supports not (clip-path: inset(0)) {
+  .opening-sequence {
+    animation: loader-exit 0.35s ease 1.05s forwards;
+  }
+}
