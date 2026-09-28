@@ -38,7 +38,7 @@ The existing visual identity, fonts, colour palette, navbar, buttons, base cards
 - Desktop course, founder and feedback layouts, tablet subject cards, and mobile founder and feedback layouts were visually reviewed.
 - Mobile menu open, Escape dismissal, and navigation to Programs passed. Existing keyboard focus cycling is retained.
 - All internal anchor targets exist. External links match the supplied WhatsApp, phone and Maps destinations. All new-tab links have noopener and noreferrer.
-- The existing international display / link format +91 97254 30671 points to the same Indian number as 09725430671.
+- The international display / link format +91 70945 93116 uses the corrected client number 7094593116.
 - Placeholder feedback shows no student names, star ratings, quotes or achievements as real feedback. Founder identity, photograph, qualification, experience and philosophy are clearly pending.
 - No library, counselling, mock-test, study-material or unsupported infrastructure claims were found in rendered content.
 - The final browser console has no errors or warnings. No actual call or WhatsApp message was sent during testing.
@@ -82,7 +82,7 @@ The development site was visually reviewed at desktop, tablet and mobile sizes. 
 - Tablet split layout, navigation, imagery and information strip reviewed visually.
 - Mobile menu opens and closes. Escape dismisses it, Shift+Tab cycles to the last menu link, Tab cycles back to the menu button, and selecting Programs / Contact closes the menu and navigates correctly.
 - All in-page link targets exist. There is one main page heading and all links have accessible names.
-- All phone links use the supplied `tel:+919725430671` value. WhatsApp and Maps hrefs match the supplied destinations. All new-tab links include `noopener noreferrer`. No call or message was sent during validation.
+- All phone links use the corrected `tel:+917094593116` value. WhatsApp uses `https://wa.me/917094593116` with the existing enquiry message. Maps links remain unchanged. All new-tab links include `noopener noreferrer`. No call or message was sent during validation.
 - Both remote study images loaded successfully with meaningful alt text.
 - The branded loader dismisses. Timeline progress was observed changing with scroll.
 - Generated JSON-LD parses correctly and contains the provided name, phone, founding year and address. Canonical URL metadata is intentionally absent until the public domain is confirmed.
